@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #00796b;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    background-color: #80deea;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.card.flipped {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.card.matched {
+    background-color: #a5d6a7;
+    cursor: default;
+}
